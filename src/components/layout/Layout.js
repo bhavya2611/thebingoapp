@@ -27,7 +27,6 @@ const Layout = () => {
       cardData[key].flag = !cardData[key].flag;
       setCardData(cloneDeep(cardData));
       const { didWin, winArrIndex } = checkPlayerWon(cardData);
-      debugger;
       if (didWin) {
         setShowModal(true);
         setStatus("applause");

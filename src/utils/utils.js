@@ -59,7 +59,12 @@ export const checkPlayerWon = (currentGameObj) => {
     ) {
       if (!winArr[i]) {
         winArr[i] = true;
-        return { didWin: true, winArrIndex: bingoArray[i] };
+        const allWin = winArr.map((item, index) => {
+          if (item) {
+            return bingoArray[index];
+          }
+        });
+        return { didWin: true, winArrIndex: allWin.flat() };
       }
     } else {
       winArr[i] = false;
