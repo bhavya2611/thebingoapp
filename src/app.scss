@@ -1,0 +1,60 @@
+.app {
+  text-align: center;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  background: #acb6e5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #acb6e5,
+    #86fde8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #acb6e5,
+    #86fde8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: rgb(59, 13, 60);
+  // background: -moz-linear-gradient(
+  //   0deg,
+  //   rgba(59, 13, 60, 1) 0%,
+  //   rgba(100, 23, 57, 1) 35%,
+  //   rgba(163, 14, 37, 1) 100%
+  // );
+  // background: -webkit-linear-gradient(
+  //   0deg,
+  //   rgba(59, 13, 60, 1) 0%,
+  //   rgba(100, 23, 57, 1) 35%,
+  //   rgba(163, 14, 37, 1) 100%
+  // );
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(59, 13, 60, 1) 0%,
+  //   rgba(100, 23, 57, 1) 35%,
+  //   rgba(163, 14, 37, 1) 100%
+  // );
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b0d3c",endColorstr="#a30e25",GradientType=1);
+
+  .bingo-div {
+    margin: 4px 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-7 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .col-lg-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+
+button:focus {
+  outline: none;
+}

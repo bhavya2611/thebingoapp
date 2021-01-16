@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.caption-card {
+  height: 100%;
+
+  .card-content {
+    height: 100%;
+    border: 5px solid $color-dark-red;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  :hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .card-red {
+    background-color: $color-off;
+  }
+
+  .card-green {
+    background-color: $color-on;
+    text-decoration: line-through;
+  }
+
+  @keyframes blinking {
+    0% {
+      background-color: $color-on;
+    }
+
+    100% {
+      background-color: #ff7c00;
+    }
+  }
+
+  .blink {
+    animation: blinking 0.5s infinite;
+  }
+
+  @media (max-width: 600px) {
+    .card-content {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .card-content {
+      font-size: 9px;
+    }
+  }
+}

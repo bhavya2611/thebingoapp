@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+.layout {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px !important;
+  background: $color-dark-red;
+  border-radius: 10px;
+  filter: drop-shadow(2px 4px 6px $color-black);
+
+  .card-parent-div {
+    width: 20%;
+    height: 14vh;
+  }
+}

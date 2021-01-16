@@ -1,0 +1,8 @@
+@import "../../styles/variables.scss";
+
+.game-header {
+  padding: 12px;
+  color: $color-dark-red;
+  font-size: 1.5rem;
+  filter: drop-shadow(2px 4px 6px black);
+}

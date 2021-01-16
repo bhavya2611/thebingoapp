@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.game-footer {
+  padding-right: 12px;
+  color: $color-dark-red;
+  filter: drop-shadow(2px 4px 6px black);
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  .footer-btn {
+    border: none;
+    background: none;
+    color: $color-dark-red;
+    margin-left: 4px;
+    :focus {
+      outline: none;
+    }
+  }
+
+  .footer-label {
+    margin: 0px;
+  }
+
+  .footer-div {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
