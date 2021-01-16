@@ -51,6 +51,7 @@ const bingoArray = [
 const winArr = [false, false, false, false, false, false, false, false, false];
 
 export const checkPlayerWon = (currentGameObj) => {
+  let winArrIndex = [];
   for (let i = 0; i < bingoArray.length; i++) {
     if (
       bingoArray[i].every((j) => {
@@ -64,13 +65,17 @@ export const checkPlayerWon = (currentGameObj) => {
             return bingoArray[index];
           }
         });
-        return { didWin: true, winArrIndex: allWin.flat() };
+        allWin.forEach((item) => {
+          if (item) {
+            winArrIndex = [...winArrIndex, ...allWin];
+          }
+        });
       }
     } else {
       winArr[i] = false;
     }
   }
-  return false;
+  return winArrIndex.flat();
 };
 
 export const gifArrW = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];

@@ -26,12 +26,10 @@ const Layout = () => {
     if (key !== 13) {
       cardData[key].flag = !cardData[key].flag;
       setCardData(cloneDeep(cardData));
-      const { didWin, winArrIndex } = checkPlayerWon(cardData);
-      if (didWin) {
+      const winArrIndex = checkPlayerWon(cardData);
+      if (winArrIndex && winArrIndex.length > 0) {
         setShowModal(true);
         setStatus("applause");
-      }
-      if (winArrIndex && winArrIndex.length > 0) {
         setWinIndex(cloneDeep(winArrIndex));
       } else {
         setWinIndex([]);
