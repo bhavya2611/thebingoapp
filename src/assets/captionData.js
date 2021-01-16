@@ -23,7 +23,7 @@ export const data = [
   "Has never sat in an airplane",
   "Loves mountains",
   "Loves beaches",
-  "Bites his nails",
+  "Bites their nails",
   "Failed a driving test",
   "Cuts their own hair",
   "Has dyed their hair blue",
