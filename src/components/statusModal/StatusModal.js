@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
-import { gifArrW, gifArrL, gifArrA } from "../../utils/utils";
+import { gifArrA } from "../../utils/utils";
 import applause from "../../assets/sound/applause.mp3";
 import cheer from "../../assets/sound/cheer.mp3";
 import boo from "../../assets/sound/boo.mp3";
@@ -17,14 +17,14 @@ const StatusModal = ({ showModal, handleClose, status, isMute }) => {
       audio.play();
     }
     title = "Yayayaya. Keep Going";
-    srcImg = gifArrW[num];
+    // srcImg = gifArrW[num];
   } else if (status === "lose") {
     if (!isMute) {
       audio = new Audio(boo);
       audio.play();
     }
     title = "Uh Oh. Don't Give Up";
-    srcImg = gifArrL[num];
+    // srcImg = gifArrL[num];
   } else if (status === "applause") {
     if (!isMute) {
       audio = new Audio(applause);

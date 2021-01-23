@@ -1,25 +1,3 @@
-import w1 from "../assets/gifs/w1.gif";
-import w2 from "../assets/gifs/w2.gif";
-import w3 from "../assets/gifs/w3.gif";
-import w4 from "../assets/gifs/w4.gif";
-import w5 from "../assets/gifs/w5.gif";
-import w6 from "../assets/gifs/w6.gif";
-import w7 from "../assets/gifs/w7.gif";
-import w8 from "../assets/gifs/w8.gif";
-import w9 from "../assets/gifs/w9.gif";
-import w10 from "../assets/gifs/w10.gif";
-
-import l1 from "../assets/gifs/l1.gif";
-import l2 from "../assets/gifs/l2.gif";
-import l3 from "../assets/gifs/l3.gif";
-import l4 from "../assets/gifs/l4.gif";
-import l5 from "../assets/gifs/l5.gif";
-import l6 from "../assets/gifs/l6.gif";
-import l7 from "../assets/gifs/l7.gif";
-import l8 from "../assets/gifs/l8.gif";
-import l9 from "../assets/gifs/l9.gif";
-import l10 from "../assets/gifs/l10.gif";
-
 import a1 from "../assets/gifs/a1.gif";
 import a2 from "../assets/gifs/a2.gif";
 import a3 from "../assets/gifs/a3.gif";
@@ -51,7 +29,7 @@ const bingoArray = [
 const winArr = [false, false, false, false, false, false, false, false, false];
 
 export const checkPlayerWon = (currentGameObj) => {
-  let winArrIndex = [];
+  var winArrIndex = [];
   for (let i = 0; i < bingoArray.length; i++) {
     if (
       bingoArray[i].every((j) => {
@@ -63,8 +41,11 @@ export const checkPlayerWon = (currentGameObj) => {
         const allWin = winArr.map((item, index) => {
           if (item) {
             return bingoArray[index];
+          } else {
+            return null;
           }
         });
+        // eslint-disable-next-line
         allWin.forEach((item) => {
           if (item) {
             winArrIndex = [...winArrIndex, ...allWin];
@@ -78,8 +59,8 @@ export const checkPlayerWon = (currentGameObj) => {
   return winArrIndex.flat();
 };
 
-export const gifArrW = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
-export const gifArrL = [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10];
+// export const gifArrW = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
+// export const gifArrL = [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10];
 export const gifArrA = [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10];
 
 export const getData = () => {
