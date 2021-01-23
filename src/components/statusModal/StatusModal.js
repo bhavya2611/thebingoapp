@@ -41,7 +41,7 @@ const StatusModal = ({ showModal, handleClose, status, isMute }) => {
       </Modal.Header>
       <Modal.Body>
         <div className="modal-gif-img">
-          <img src={srcImg} alt="" width="200" height="200" />
+          <img src={srcImg} alt="win gif" width="200" height="200" />
         </div>
       </Modal.Body>
     </Modal>
