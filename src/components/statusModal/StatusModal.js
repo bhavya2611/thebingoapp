@@ -17,14 +17,12 @@ const StatusModal = ({ showModal, handleClose, status, isMute }) => {
       audio.play();
     }
     title = "Yayayaya. Keep Going";
-    // srcImg = gifArrW[num];
   } else if (status === "lose") {
     if (!isMute) {
       audio = new Audio(boo);
       audio.play();
     }
     title = "Uh Oh. Don't Give Up";
-    // srcImg = gifArrL[num];
   } else if (status === "applause") {
     if (!isMute) {
       audio = new Audio(applause);

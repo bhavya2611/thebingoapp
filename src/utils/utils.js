@@ -58,9 +58,6 @@ export const checkPlayerWon = (currentGameObj) => {
   }
   return winArrIndex.flat();
 };
-
-// export const gifArrW = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10];
-// export const gifArrL = [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10];
 export const gifArrA = [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10];
 
 export const getData = () => {

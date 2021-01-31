@@ -34,11 +34,6 @@ const Layout = () => {
       } else {
         setWinIndex([]);
       }
-      // else if (cardData[key].flag) {
-      //   setStatus("win");
-      // } else {
-      //   setStatus("lose");
-      // }
     }
   };
 
